@@ -56,7 +56,7 @@ def cargar_usuarios(ruta_archivo):
                 fila["margen_disponible"] = float(fila["margen_disponible"])
                 usuarios.append(fila)
     except FileNotFoundError:
-        print(f"\n[ERROR CRÍTICO] No se encontró el archivo '{ruta_archivo}'.")
+        print(f"\n No se encontró el archivo '{ruta_archivo}'.")
         sys.exit(1)
     return usuarios
 
@@ -184,11 +184,13 @@ def estado_menu():
     while True:
         opcion = input("Elegí una opción (1-2): ").strip()
         if opcion in ("1", "2"):
-            return int(opcion)
+            return int(opcion) 
         else:
             print(">> Opción inválida. Elegí 1 o 2.")
 
-
+def traer_margen(usuario):
+    margen = usuario["margen_disponible"]
+    return margen
 # -------------------------------------------------------------
 # ESTADO: EVALUACIÓN DEL PRÉSTAMO (Gateway principal)
 # -------------------------------------------------------------
@@ -251,6 +253,8 @@ def evaluar_prestamo(usuario, monto_solicitado, usuarios):
 
 def flujo_solicitud_prestamo(usuario, usuarios):
     encabezado("SOLICITUD DE PRÉSTAMO")
+    margen = usuario["margen_disponible"]
+    print(f"Margen disponible: {formato_pesos(margen)} ")
     monto = pedir_monto("Ingresá el monto que deseás solicitar: $")
     evaluar_prestamo(usuario, monto, usuarios)
 
