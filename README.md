@@ -36,7 +36,7 @@ La arquitectura del proyecto está consolidada en un único archivo `main.py`, d
 ## Estructura del Proyecto
 
 ```
-TPI-Programacion-1-UTN-a-distancia/
+Simulador-de-chatbot-de-prestamo-bancario/
 ├── main.py        # Lógica principal del sistema: menú, CRUD, filtros, orden y estadísticas
 ├── usuarios.csv      # Archivo de datos con la información de los países
 ├── diagram.bpmn    # Archivo .bpmn con el diagrama BPMN 2.0
