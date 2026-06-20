@@ -26,6 +26,7 @@ La arquitectura del proyecto está consolidada en un único archivo `main.py`, d
 ## Tutores
 
 - Martina Zabala
+- Esteban Varberde
 
 ## Integrantes
 
@@ -41,6 +42,10 @@ Simulador-de-chatbot-de-prestamo-bancario/
 ├── usuarios.csv      # Archivo de datos con la información de los países
 ├── diagram.bpmn    # Archivo .bpmn con el diagrama BPMN 2.0
 ├── diagram.svg     # Imagen del diagrama BPMN 2.0
+├── pruebas_y_casos
+│          ├── caso_exito.png
+│          ├── caso_exito_parcial.png
+│          └── caso_rechazo.png
 ├── .gitignore      # Reglas para el archivo gitignore
 └── README.md       # Este archivo
 ```
@@ -83,7 +88,10 @@ El proyecto utiliza únicamente módulos de la librería estándar de Python, po
 
 ## Ejemplos de Entrada y Salida
 
+[**Caso de éxito**](pruebas_y_casos/caso_exito.png)
 
+[**Caso de éxito parcial**](pruebas_y_casos/caso_exito_parcial.png)
 
+[**Caso de rechazo**](pruebas_y_casos/caso_rechazo.png)
 
 
